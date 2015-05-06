@@ -1,0 +1,18 @@
+# Es erfolgt mit voller Absicht keine Prüfung, ob mod_rewrite geladen ist! # Denn es ist besser, einen 500er Fehler zu haben als die Dateien
+# unbemerkt ungeschützt auszuliefern:
+RewriteEngine On
+#Versteckte Dateien werden verboten:
+RewriteRule "^.*/\." RewriteRule "^\."
+#Niemals Ändern:
+RewriteRule "^.*/\.ht" RewriteRule "^\.ht"
+- [F] - [F]
+- [F] - [F]
+#Directory Index (, ggf. mit Parametern)
+RewriteRule "^$"                ./index.php [L]
+RewriteRule "^[?&].*$"          ./index.php [L]
+#PHP-Dateien kontrollieren sich selbst
+RewriteRule "^(.*\.php)$" - [L] RewriteRule "^(.*\.php[?&].*)$" - [L]
+#Ressourcen, die nicht durch sendFile.php kontrolliert werden
+RewriteRule "^interior/(.*)$"   - [L]
+#Alles andere liefert die Datei sendFile.php aus
+RewriteRule "^(.*)$" ./sendFile.php?file=$1 [L]
