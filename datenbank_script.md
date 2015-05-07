@@ -31,4 +31,10 @@ FOREIGN KEY (sid)
 REFERENCES schluessel(sid)
 ON DELETE CASCADE);
 
+CREATE TABLE user(uid int(10) PRIMARY KEY, pid int(10), username varchar(250),password varchar(250),
+
+FOREIGN KEY (pid)
+REFERENCES person(pid)
+ON DELETE CASCADE);
+
 
