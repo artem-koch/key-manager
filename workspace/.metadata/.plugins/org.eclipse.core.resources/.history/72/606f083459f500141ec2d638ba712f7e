@@ -1,0 +1,13 @@
+<html>
+<body>
+
+<?php
+$schluesselNr = $_POST ["schluesselNr"];
+$bestand = $_POST ["bestand"];
+$faerbung = $_POST ["faerbung"];
+echo $schluesselNr;
+echo $bestand;
+echo $faerbung;
+?> 
+</body>
+</html>

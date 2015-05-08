@@ -1,0 +1,12 @@
+<html>
+<body>
+<?php
+$schluesselNr = $_GET ["schluesselNr"];
+$bestand = $_GET ["bestand"];
+$faerbung = $_GET ["faerbung"];
+echo $schluesselNr;
+echo $bestand;
+echo $faerbung;
+?> 
+</body>
+</html>

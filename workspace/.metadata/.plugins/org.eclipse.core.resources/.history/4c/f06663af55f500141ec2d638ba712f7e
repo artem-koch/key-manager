@@ -1,0 +1,4 @@
+<?php
+echo $_POST["schluesselNr"];
+echo $_POST["bestand"];
+echo $_POST["faerbung"];
