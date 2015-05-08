@@ -19,6 +19,4 @@ if ($row->pw == $passwort) {
 } else {
 	echo "Benutzername und/oder Passwort waren falsch. <a href=\".\login.html\">Login</a>";
 }
-
-session_destroy();
 ?>
