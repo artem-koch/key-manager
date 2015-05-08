@@ -13,7 +13,7 @@ if ($passwort != $passwort2 or $username == "" or $passwort == "") {
 }
 $passwort = md5 ( $passwort );
 
-$result = mysql_query ( "SELECT uid FROM user_account WHERE username LIKE '$username'" );
+$result = mysql_query ( "SELECT uid FROM user WHERE username LIKE '$username'" );
 $menge = mysql_num_rows ( $result );
 
 if ($menge == 0) {

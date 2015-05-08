@@ -9,7 +9,7 @@ mysql_select_db ( "key-manager" ) or die ( "Datenbank konnte nicht ausgewählt we
 $username = $_POST ["username"];
 $passwort = md5 ( $_POST ["password"] );
 
-$abfrage = "SELECT username, pw FROM user_account WHERE username LIKE '$username' LIMIT 1";
+$abfrage = "SELECT username, pw FROM user WHERE username LIKE '$username' LIMIT 1";
 $ergebnis = mysql_query ( $abfrage );
 $row = mysql_fetch_object ( $ergebnis );
 
