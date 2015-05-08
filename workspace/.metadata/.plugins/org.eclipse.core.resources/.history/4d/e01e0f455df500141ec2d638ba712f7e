@@ -17,7 +17,7 @@ $result = mysql_query ( "SELECT uid FROM user_account WHERE username LIKE '$user
 $menge = mysql_num_rows ( $result );
 
 if ($menge == 0) {
-	$eintrag = "INSERT INTO user_account (username, pw) VALUES ('$username', '$passwort')";
+	$eintrag = "INSERT INTO user (username, pw) VALUES ('$username', '$passwort')";
 	$eintragen = mysql_query ( $eintrag );
 	
 	if ($eintragen == true) {
