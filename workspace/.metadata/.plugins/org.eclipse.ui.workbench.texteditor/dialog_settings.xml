@@ -2,15 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="$result = mysql_query(&quot;SELECT id FROM login" key="selection"/>
+		<item value="user" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="fehk"/>
+			<item value="user"/>
+			<item value="post"/>
+			<item value="output"/>
+			<item value="$sTable"/>
+			<item value="IndexColumn"/>
+			<item value="$sIndexColumn"/>
 			<item value="$result = mysql_query(&quot;SELECT id FROM login"/>
 		</list>
 		<list key="replacehistory">
+			<item value="GET"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

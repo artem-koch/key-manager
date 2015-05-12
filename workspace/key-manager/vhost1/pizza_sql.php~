@@ -1,0 +1,23 @@
+	<?php
+
+		$verbindung = mysql_connect ("127.0.0.1",
+		"root", "")
+		or die ("keine Verbindung moeglich.
+		 Benutzername oder Passwort sind falsch");
+
+		mysql_select_db("pizzaria")
+		or die ("Die Datenbank existiert nicht.");
+
+
+		$abfrage = "SELECT * FROM pizza";
+		$ergebnis = mysql_query($abfrage);
+		while($row = mysql_fetch_object($ergebnis)){
+			echo "Nr: $row->ID, 
+			$row->name,
+			$row->beschreibung,
+			$row->zutaten,
+			$row->preis <br>";
+
+
+		}
+	?>
