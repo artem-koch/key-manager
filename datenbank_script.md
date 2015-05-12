@@ -6,7 +6,9 @@ CREATE TABLE zylinder(
 CREATE TABLE schluessel(sid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, schluesselNr int(10), bestand int(10), faerbung INT(10)) ENGINE=InnoDB;
 CREATE TABLE person(pid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, first_name VARCHAR(250), last_name VARCHAR(250)) ENGINE=InnoDB;
 
-CREATE TABLE zylinderwechsel(rid int(10), zid int(10), einbau_datum DATE, ausbau_datum DATE,
+CREATE TABLE zylinderwechsel(
+zwid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+rid int(10), zid int(10), einbau_datum DATE, ausbau_datum DATE,
 FOREIGN KEY (rid)
 REFERENCES raueme(rid)
 ON DELETE CASCADE,
@@ -15,7 +17,7 @@ FOREIGN KEY (zid)
 REFERENCES zylinder(zid)
 ON DELETE CASCADE) ENGINE=InnoDB;
 
-CREATE TABLE schluesselpasstzuzylinder(zid INT(10), sid INT(10),
+CREATE TABLE schluesselpasstzuzylinder(szid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, zid INT(10), sid INT(10),
 FOREIGN KEY (zid)
 REFERENCES zylinder(zid)
 ON DELETE CASCADE,
@@ -24,7 +26,7 @@ REFERENCES schluessel(sid)
 ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
-CREATE TABLE vergabevonschluesseln(sid int(10), pid int(10), ausgabe_datum DATE, rueckgabe_datum DATE,
+CREATE TABLE vergabevonschluesseln(vid int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, sid int(10), pid int(10), ausgabe_datum DATE, rueckgabe_datum DATE,
 
 FOREIGN KEY (pid)
 REFERENCES person(pid)
