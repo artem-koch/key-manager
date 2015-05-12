@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Unterricht</title>
+    <title>Keymanager - Schlüsselverwaltung</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="dist/css/style.css" rel="stylesheet">
