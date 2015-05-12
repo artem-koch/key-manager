@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Unsere Schule</title>
+    <title>Keymanager</title>
 	    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="dist/css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,7 +21,7 @@
 <body>
 	<div class="container">
 		<?php include('navigation.php');?>
-		<?php include('pizza_sql.php');?>
+		<!--<?php include('pizza_sql.php');?>-->
 		
 		<!--Main-->
 		<div class="row content">
@@ -29,11 +29,12 @@
 			<div class="col-md-2 col-sm-3 col-xs-9 hidden-print sidenav">
 				<nav id="sidenav">
 					<ul>
-					<?php
+<!-- <?php 
 // 						include('pizza_name_sql.php');
 // 						while($row = mysql_fetch_object($ergebnis)){
 // 							echo "<li><a href=\"$row->name\">$row->name</a></li>";
 // 						}?>
+-->
 					</ul>
 				</nav>
 			</div>
@@ -66,17 +67,7 @@
 // 	echo "";
 // 	echo "";
 // 	}
-?>
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			</div>	
+?>			</div>	
 		</div>
 		<!--/Main-->	
 	</div>
