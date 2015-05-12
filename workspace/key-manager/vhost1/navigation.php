@@ -1,4 +1,5 @@
 <!--Header-->
+<meta charset="utf-8">
     <div class="row no-border">
       <div class="col-sm-12 no-border">
         <img src="img/header.jpg" class="img-responsive" alt="Ein Bild vom Schulhof">
@@ -18,10 +19,10 @@
                 <div class="navbar-collapse collapse">
                  <!--NAVIGATIONSELEMENTE-->
                     <ul class="nav navbar-nav">      
-                    <li><a href="index.php">Übersicht</a></li>
-                    <li><a href="">Schlüssel</a></li>
-                    <li><a href="unterricht.php">Personen</a></li>
-        			<li><a href="gms.php">Räume</a></li>
+                    <li><a href="index.php">Ãœbersicht</a></li>
+                    <li><a href="key.php">SchlÃ¼ssel</a></li>
+                    <li><a href="person.php">Personen</a></li>
+        			      <li><a href="gms.php">RÃ¤ume</a></li>
         		<!--	<li><a href="wrs.php">bla</a></li>
         			<li><a href="termine.php">bla</a></li>
         			<li><a href="preset.php">bla</a></li> -->
