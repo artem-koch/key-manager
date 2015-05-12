@@ -8,14 +8,14 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="fehk"/>
 			<item value="user"/>
+			<item value="$aColumns"/>
+			<item value="fehk"/>
 			<item value="post"/>
 			<item value="output"/>
 			<item value="$sTable"/>
 			<item value="IndexColumn"/>
 			<item value="$sIndexColumn"/>
-			<item value="$result = mysql_query(&quot;SELECT id FROM login"/>
 		</list>
 		<list key="replacehistory">
 			<item value="GET"/>

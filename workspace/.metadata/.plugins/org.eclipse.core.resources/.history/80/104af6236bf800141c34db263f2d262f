@@ -31,7 +31,7 @@ $(document).ready(function() {
     $('#example').dataTable( {
 		"bProcessing": true,
 		"bServerSide": true,
-		"sAjaxSource": "\data.php"
+		"sAjaxSource": "data.php"
 } );
 } );    
 </script>
