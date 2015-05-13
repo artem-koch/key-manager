@@ -1,5 +1,5 @@
 
-CREATE TABLE raueme(rid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(50)) ENGINE=InnoDB;
+CREATE TABLE raueme(rid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, raumname VARCHAR(50)) ENGINE=InnoDB;
 
 CREATE TABLE zylinder(
     zid INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT, bezeichnung varchar(50), bestand int(10), typ varchar(10), laengeInnen Int(10), laengeAussen int(10)) ENGINE=InnoDB;
