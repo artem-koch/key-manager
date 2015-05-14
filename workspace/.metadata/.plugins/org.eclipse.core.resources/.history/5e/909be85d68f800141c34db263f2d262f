@@ -1,1 +1,0 @@
-xcopy .\* C:\xampp\htdocs\key-manager\ /f /e /s /y

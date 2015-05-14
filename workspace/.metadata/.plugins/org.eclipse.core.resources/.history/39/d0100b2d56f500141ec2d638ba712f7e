@@ -1,5 +1,0 @@
-<?php
-$schluesselNr =  $_POST ["schluesselNr"];
-$bestand = $_POST ["bestand"];
-$faerbung = $_POST ["faerbung"];
-?> 

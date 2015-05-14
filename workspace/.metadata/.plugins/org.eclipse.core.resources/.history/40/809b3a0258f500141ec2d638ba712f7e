@@ -1,7 +1,0 @@
-<html>
-<body>
-
-Schlüssel <?php echo $_POST["schluesselNr"]?>
-
-</body>
-</html>
